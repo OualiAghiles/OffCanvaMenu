@@ -1,0 +1,19 @@
+.sidenav
+	@apply .w-full .fixed .min-h-full .bg-red-500 .top-0 .left-0 .shadow-xl .p-5 .transition-transform .duration-500
+	@screen sm
+		@apply .w-1/2
+	@screen md
+		@apply .w-1/4
+	@screen lg
+		@apply .w-1/5	
+	transform: translateX(-100%)
+	@apply .bg-secondary-300
+	&.active
+		transform: translateX(0)
+	.social-media
+		position: absolute
+		bottom: 20px
+		left: 20px
+		right: 20px
+		border-top: 1px solid
+		@apply .border-secondary-100

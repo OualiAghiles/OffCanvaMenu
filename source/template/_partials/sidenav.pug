@@ -1,0 +1,24 @@
+- var menu = [{link: '/home.html',name: 'Home', active: true}, {link: '/about.html',name: 'about'},{link: '/blog.html',name: 'blog'},{link: '/contact.html', name: 'contact'}]
+- var icons = ['fa-facebook-f','fa-instagram','fa-twitter','fa-youtube']
+mixin menu(arr)
+  ul.mt-5
+    each link in arr
+      if link.active
+        li.text-center.active
+          i.fas.fa-circle.text-primary
+          a.text-3xl.text-primary(href= link.link)= link.name
+      else
+        li.text-center
+          a.text-white.text-3xl(href= link.link)= link.name 
+aside.sidenav.z-50
+  h3.text-white.text-4xl.relative Menu
+    button.close.absolute.right-0(class="hover:text-primary")
+      i.far.fa-times-circle
+  hr.my-8
+  +menu(menu)
+  .social-media
+    ul.mt-5.flex.justify-center
+      each val in icons
+        li.mx-4
+          a.text-white(href="#") 
+            i.fab.text-xl(class=val)
