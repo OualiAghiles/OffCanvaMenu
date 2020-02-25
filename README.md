@@ -62,7 +62,7 @@ Structure on source file
 >        2. styles
 >            - main.sass
 >            - sass
->               - offcanvas.sass (***minimum style to make the LightBox work correctly***)
+>               - offcanvas.sass (***minimum style to make the offcanvasMenus work correctly***)
 >        3. scripts
 >            - app.js
 >            - plugins
